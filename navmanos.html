@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+            font-family: "Montserrat", sans-serif;
+			padding: 4px;
+			text-align: center;
+			margin: 2px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #000000;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 4px;
+		}
+
+		.background {
+			background-color: #fbff0c;
+		}
+
+		.border {
+			border: 1px solid #000000;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #ff0a0a;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="Home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="Manuales" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-newspaper"></i> Manuales</a>
+		<a id="Formación y espiritualidad" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Formación y espiritualidad</a>
+		<a id="Cursos" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-glasses"></i> Cursos</a>
+		<a id="Modelo cartas" onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-envelope"></i> Modelo cartas</a>
+		<a id="Modelo proyectos" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-helmet-safety"></i> Modelo proyectos</a>
+		<a id="Evaluación" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-square-check"></i> Evaluación</a>
+		<a id="Equipos" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-people-group"></i> Equipos</a>
+		<a id="Videos" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-video"></i> Videos</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/manoslaplata/Manos-a-la-Obra-La-Plata-beb67ee06b844c6086ec6d1471612e70?pvs=4", '_blank').focus();
+			else if (id == "Manuales")
+				window.open("https://www.notion.so/manoslaplata/Manuales-aeb63050c6a64c30b402fd2cbb2bdf32?pvs=4", '_blank').focus();
+			else if (id == "Formación y espiritualidad")
+				window.open("https://www.notion.so/manoslaplata/Formaci-n-y-espiritualidad-Bases-del-Manos-a-la-Obra-53356860435446d7b190ccbd2d4335f7?pvs=4", '_blank').focus();
+			else if (id == "Cursos")
+				window.open("https://www.notion.so/manoslaplata/Curso-Secretar-a-Nacional-Manos-a-la-Obra-7dbbcae2abe74ca3a1e4deb046b46eab?pvs=4", '_blank').focus();
+			else if (id == "Modelo cartas")
+				window.open("https://www.notion.so/manoslaplata/Modelo-Cartas-e98ed11535604df4a2b4446cc01669f5?pvs=4", '_blank').focus();
+			else if (id == "Modelo proyectos")
+				window.open("https://www.notion.so/manoslaplata/Modelo-de-proyectos-75902574966648bdb625835b49701521?pvs=4", '_blank').focus();
+			else if (id == "Evaluación")
+				window.open("https://www.notion.so/manoslaplata/Preguntas-de-evaluacion-d5ab662525ce45e1b3624ff292df8a0d?pvs=4", '_blank').focus();
+			else if (id == "Equipos")
+				window.open("https://www.notion.so/manoslaplata/Equipos-y-referentes-272bf11a8bae4ea7af436f7597c80773?pvs=4", '_blank').focus();
+			else if (id == "Videos")
+				window.open("https://www.notion.so/manoslaplata/V-deos-c000d57d208a4b968d0eaf166c18835a?pvs=4", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
